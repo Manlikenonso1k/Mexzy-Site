@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+  <head>
+    <link rel="stylesheet" href="mexzy.css">
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+
+    <title>Mexzy's Site</title>
+
+  </head>
+  <div class="overlay">
+    <div class="container">
+      <div class="right-header">
+        <input class="search" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-svg" src="search.svg">
+          <div class="help">Search</div>
+        </button>
+        <div class="help-div">
+          <img class="profile" src="omo/profile.jpeg">
+          <div class="help">Profile</div>
+        </div>
+      </div>
+      <div class="flim-info">
+        <!--guy i need the right zootopia color logog-->
+        <!--<div>
+          <img src="omo/zootopia-icon.jpeg">
+        </div>-->
+        <!--fix span space below-->
+        <p>A Disney Original Flim <span>&nbsp;92% English&nbsp;</span> 2016</p>
+        <button class="play-button">Play</button><button class="add-button">+</button>
+        <p class="my-list">MY LIST</p>
+      </div>
+      <div class="flim-list-div">
+        <button class="front-button">&lt;</button>
+        <div class="flim-list">
+          <a href="//https://safetxt.net/8XYntf2iT3zXEc1AusERBArM5O7W2xegPzOFFYNpC11C3qM3AW6RitjXL0Nys55F2NW01/">
+            <img src="omo/ATLAS.jpg">
+          </a>
+        </div>
+        <div class="flim-list">
+          <a href="#">
+            <img src="omo/Boss-baby.jpg">
+          </a>
+        </div>
+        <div class="flim-list">
+          <a href="#">
+            <img src="omo/local-naija.jpg">
+          </a>
+        </div>
+        <div class="flim-list">
+          <a href="#">
+            <img src="omo/superman1.jpg">
+          </a>
+        </div>
+        <div class="flim-list">
+          <a href="#">
+            <img src="omo/the-good-dino.jpg">
+          </a>
+        </div>
+        <div class="flim-list">
+          <a href="#">
+            <img src="omo/trigger.jpg">
+          </a>
+        </div>
+        <div class="flim-list">
+          <a href="#">
+            <img src="omo/obarin.jpg">
+          </a>
+        </div>
+        <button class="back-button">&gt;</button>
+      </div>
+    </div>
+  </div>
+  <!--javascript for motion left-right, targeted class flim-list div-->
+  <!--  <script>
+    $(document).ready(function () {
+      // Animation function
+      function animateFilmList() {
+        var containerWidth = $('.flim-list-div').width();
+        var totalWidth = 0;
+        $('.flim-list').each(function () {
+          totalWidth += $(this).outerWidth();
+        });
+
+        // Calculate the duration based on the total width
+        var duration = totalWidth * 10; // Adjust speed as needed
+
+        // Animate
+        function moveLeft() {
+          $('.flim-list-div').animate({ scrollLeft: totalWidth }, duration, 'linear', function () {
+            $('.flim-list-div').animate({ scrollLeft: 0 }, 0, function () {
+              moveLeft();
+            });
+          });
+        }
+
+        moveLeft();
+      }
+
+      // Start animation on page load
+      animateFilmList();
+
+      // Pause animation on hover
+      $('.flim-list').hover(function () {
+        $('.flim-list-div').stop(true, false); // Stop animation
+      }, function () {
+        animateFilmList(); // Resume animation
+      });
+    });
+  </script>
+-->
+</body>
+
+</html>
